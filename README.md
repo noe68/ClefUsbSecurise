@@ -10,7 +10,9 @@
   <li>capteur d'empreinte digitale</li>
   <li>programmation de logiciel IHM</li>
   <li>programmation de la carte Arduino</li>
-  <li>stockage dans une microSD</li>
+  <li>stockage de mot de passe dans une microSD</li>
+  <li>génération d'un mot de passe sécurisé</li>
+  <li>chiffrement fort de toute les données</li>
 </ul>
 <br>
 <h2> objet de l'étude </h2> 
@@ -21,5 +23,7 @@
 <h2> énoncé du besoin : </h2>
 <h3>A qui servira ce produit</h3>
 <p>A tous les utilisateurs d'internet qui ont envie de sécuriser leurs infromations personelles</p>
+<p>Au personnes ayant des informations sensibles a proteger</P>
 <h3>A quoi servira ce produit</h3>
 <p>stocker les données sensibles des utilisateurs</p>
+<p>permettre a l'utilisateur de ne retenir qu'un seul mot de passe</p>
