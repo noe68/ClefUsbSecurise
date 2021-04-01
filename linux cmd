@@ -4,3 +4,5 @@ sudo curl -o /usr/local/bin/n https://raw.githubusercontent.com/visionmedia/n/ma
 sudo chmod +x /usr/local/bin/n
 sudo n stable
 sudo snap install --classic code
+code
+npm install serialport
