@@ -14,9 +14,31 @@
     <h1>Hello World!</h1>
 
     We are using Node.js <span id="node-version"></span>, Chromium <span id="chrome-version"></span>, Electron <span id="electron-version"></span>, and Serialport <span id="serialport-version"></span>
-
     <div id="error"></div>
     <div id="ports"></div>
+    <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>  <!-- marche pas -->
+    <button id="reset-to-system">Reset to System Theme</button>
+    <script>
+        function getddl(){
+            document.getElementById('lblmess').innerHTML=
+            ("The selected value is : " +formid.ddlselect[formid.ddlselect.selectedIndex].text+'</b>')
+        }
+    </script>
+    <form name="formid">    <!-- creation du selector -->
+    <select id="root" name="ddlselect" onchange="getddl()" >
+    <option>Select COM port</option>
+    <option data-selector="1">COM1</option>
+    <option data-selector="2">COM2</option>
+    <option data-selector="3">COM3</option>
+    <option data-selector="4">COM4</option>
+    <option data-selector="5">COM5</option>
+    </select>
+    </form>
+
+    <label id="lblmess"></label> <!-- label -->
+    
 </body>
 
 <script src="./src/renderer.js"></script>
