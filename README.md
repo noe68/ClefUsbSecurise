@@ -2,7 +2,7 @@
 <h2>Date du projet :</h2> <p> 26/02/2021</p>
 <br>
 <h2>Description du projet : </h2> <p>Clef usb avec un accèes aux données sensibles sécurisées par un capteur d'empreinte et le cryptage de données</p>
-<p>Nous savons que les mots de passe sont des données particulierement sensiblesé Afin de rester en sécurité, il est recommandé d'avoir un mot de passe unique pour chaque site</p>
+<p>Nous savons que les mots de passe sont des données particulierement sensibles Afin de rester en sécurité, il est recommandé d'avoir un mot de passe unique pour chaque site</p>
 <p>C'est pourquoi cette clef est utile, elle permettra de ne pas avoir à les retenir individuellement.</p>
 <br>
 <h2>Étude : </h2> 
@@ -27,3 +27,9 @@
 <h3>À quoi servira ce produit?</h3>
 <p>Stocker les données sensibles des utilisateurs</p>
 <p>Permettre à l'utilisateur de retenir qu'un seul mot de passe pour avoir accès à toutes ses données</p>
+
+
+<h2>Répartition du travail : </h2>
+<p>Sami : logiciel</p>
+<p>Noah : logiciel</p>
+<p>Elyes : firmware</p>
