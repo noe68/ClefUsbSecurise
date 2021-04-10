@@ -26,19 +26,9 @@
             ("The selected value is : " +formid.ddlselect[formid.ddlselect.selectedIndex].text+'</b>')
         }
     </script>
-    <form name="formid">    <!-- creation du selector -->
-    <select id="root" name="ddlselect" onchange="getddl()" >
-    <option>Select COM port</option>
-    <option data-selector="1">COM1</option>
-    <option data-selector="2">COM2</option>
-    <option data-selector="3">COM3</option>
-    <option data-selector="4">COM4</option>
-    <option data-selector="5">COM5</option>
-    </select>
-    </form>
 
     <label id="lblmess"></label> <!-- label -->
-    
+    <div id="myDiv">Selection un port Com</div>
 </body>
 
 <script src="./src/renderer.js"></script>
