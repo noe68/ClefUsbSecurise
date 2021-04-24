@@ -2,15 +2,17 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
+const { list } = require('serialport');
 const serialport = require('serialport')
+
 var availablePorts = []; 
 var myDiv = document.getElementById("myDiv");
-//Create and append select list
 var selectList = document.createElement("select");
 selectList.setAttribute("id", "mySelect");
 myDiv.appendChild(selectList);
-async function listSerialPorts() {
-  await serialport.list().then((ports, err) => {
+
+ function listSerialPorts() {
+   serialport.list().then((ports, err) => {
     if(err) {
       document.getElementById('error').textContent = err.message
       return
@@ -46,9 +48,5 @@ for (var i = 0; i < availablePorts.length; i++) {
   })
 }
 
-// Set a timeout that will check for new serialPorts every 2 seconds.
-// This timeout reschedules itself.
-setTimeout(function listPorts() {
-  listSerialPorts();
-  setTimeout(listPorts, 2000);
-}, 2000);
+
+listSerialPorts()

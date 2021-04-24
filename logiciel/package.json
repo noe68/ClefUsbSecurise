@@ -5,7 +5,8 @@
     "main": "main.js",
     "scripts": {
         "start": "electron .",
-        "install": "electron-rebuild"
+        "install": "electron-rebuild",
+        "rebuild": "electron-rebuild -f -w yourmodule"
     },
     "repository": {
         "type": "git",
@@ -21,8 +22,12 @@
     "author": "GitHub",
     "license": "CC0-1.0",
     "devDependencies": {
+        "autoprefixer": "^10.2.5",
         "electron": "^11.2.0",
-        "electron-rebuild": "^2.3.4"
+        "electron-packager": "^15.2.0",
+        "electron-rebuild": "^2.3.5",
+        "postcss": "^8.2.10",
+        "tailwindcss": "^2.1.1"
     },
     "dependencies": {
         "serialport": "^9.0.6",
