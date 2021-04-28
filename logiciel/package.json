@@ -22,15 +22,14 @@
     "author": "GitHub",
     "license": "CC0-1.0",
     "devDependencies": {
-        "autoprefixer": "^10.2.5",
         "electron": "^11.2.0",
         "electron-packager": "^15.2.0",
-        "electron-rebuild": "^2.3.5",
-        "postcss": "^8.2.10",
-        "tailwindcss": "^2.1.1"
+        "electron-rebuild": "^2.3.5"
     },
     "dependencies": {
+        "jquery": "^3.6.0",
         "serialport": "^9.0.6",
-        "tableify": "^1.1.0"
+        "tableify": "^1.1.0",
+        "update-electron-app": "^2.0.1"
     }
 }
