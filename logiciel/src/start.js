@@ -72,5 +72,5 @@ comdiv.appendChild(selectList);
  }
 setTimeout(function listPorts() {
     listSerialPorts();
-    setTimeout(listPorts, 1);
+    setTimeout(listPorts, 500);
 }, 1);

@@ -4,8 +4,12 @@
 
 class Empreinte
 {
+private:
+	unsigned long currentTime, previousTime;
 public:
-	void Fonction();
+	Empreinte(unsigned long currentTime, unsigned long previousTime);
+	void setup();
+	void count();
 };
 
 #endif
