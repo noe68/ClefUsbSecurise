@@ -40,15 +40,15 @@ comdiv.appendChild(selectList);
         option.text = "port com";
         selectList.appendChild(option);
         for (var i = 0; i < availablePorts.length; i++) {
-            var option = document.createElement("option");
+            var options = document.createElement("option");
             option.setAttribute("value", i);
             option.text = availablePorts[i].path;
-            selectList.appendChild(option);
-
+            selectList.appendChild(options);
         }
     })
 
     $('#comselect').change(function() {
+        window.location.replace('empreinte.html')
         let config
         let port
         let ports
@@ -56,14 +56,13 @@ comdiv.appendChild(selectList);
         fs.readFile('portlist.json', function(erreur, fichier) {
              ports = JSON.parse(fichier)
              port = ports[portval]
-            config = {
+             config = {
                 "path" : port.path,
                 "name" : port.manufacturer
-            }
-            let donnees = JSON.stringify(config)
-
-            fs.writeFile('config.json', donnees, function(erreur) {
-                if (erreur) {
+             }
+             let donnees = JSON(config)
+             fs.writeFile('config.json', donnees, function(erreur) {
+                 if (erreur) {
                     console.log(erreur)}
             })
         })
