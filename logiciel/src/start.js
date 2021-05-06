@@ -35,14 +35,14 @@ comdiv.appendChild(selectList);
         donnees = JSON.stringify(availablePorts)
         fs.writeFileSync('portlist.json', donnees)
         document.getElementById('comselect').innerText = null
-        var option = document.createElement("option");
-        option.setAttribute("value", "");
-        option.text = "port com";
-        selectList.appendChild(option);
+        var options = document.createElement("option");
+        options.setAttribute("value", "");
+        options.text = "port com";
+        selectList.appendChild(options);
         for (var i = 0; i < availablePorts.length; i++) {
             var options = document.createElement("option");
-            option.setAttribute("value", i);
-            option.text = availablePorts[i].path;
+            options.setAttribute("value", i);
+            options.text = availablePorts[i].path;
             selectList.appendChild(options);
         }
     })
