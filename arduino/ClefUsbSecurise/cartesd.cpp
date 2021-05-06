@@ -1,6 +1,7 @@
 #include "cartesd.h" 
 
-void Cartesd::Fonction()
+void Cartesd::Setup()
 {
-    // implémentation de la fonction 
+
 }
+

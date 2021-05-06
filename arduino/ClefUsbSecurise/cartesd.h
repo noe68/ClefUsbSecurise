@@ -5,7 +5,7 @@
 class Cartesd
 {
 public:
-	void Fonction();
+	void Setup();
 };
 
 #endif

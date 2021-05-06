@@ -4,12 +4,16 @@
 
 class Empreinte
 {
-private:
-	unsigned long currentTime, previousTime;
-public:
+  //methode
+ public:
 	Empreinte(unsigned long currentTime, unsigned long previousTime);
-	void setup();
-	void count();
+	void Setup();
+	void Count(); 
+  //propriété
+ private:
+	unsigned long currentTime, previousTime;
+
+
 };
 
 #endif
